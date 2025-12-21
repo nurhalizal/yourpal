@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Zyla's Space - Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="img/N (2).png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+  href="https://fonts.googleapis.com/css2?
+  family=Libre+Baskerville:wght@400;700&
+  family=Lora:wght@400;500&
+  display=swap"
+  rel="stylesheet"> 
+</head>
+<body>
+<input type="checkbox" id="menu-toggle">
+
+<section class="hero">
+  <div class="hero-inner">
+    <h1>Zyla's Space</h1>
+    <p class="lead">Me, myself, and the things I'm fond of</p>
+  </div>
+</section>
+
+<header class="navbar">
+  <div class="nav-inner">
+    <!-- Logo on the header (top left corner) -->
+    <a href="#" class="site-logo">
+      <img src="img/N (2).png" alt="Zyla's N">
+      <span>Zyla's Space</span>
+    </a>
+
+    <!-- Nav-bars -->
+    <ul class="nav-links">
+      <li><a href="#Home" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="dropdown">
+        <a href="myspace.html">Writings ▾</a>
+        <ul class="dropdown-menu">
+            <li><a href="space-1.html">Everyday Science</a></li>
+            <li><a href="space-2.html">Words Worth Keeping</a></li>
+            <li><a href="space-3.html">Random</a></li>
+        </ul>
+        </li>
+      <li><a href="now.html">N(e)ow!</a></li>
+    </ul>
+    <label for="menu-toggle" class="hamburger">
+      <span class="line"></span>
+    </label>
+  </div>
+</header>
+
+<!-- Sidebar -->
+<div class="mobile-overlay"></div>
+<nav class="mobile-sidebar">
+  <label for="menu-toggle" class="mobile-close">✕</label>
+  <a href="#Home">Home</a>
+  <a href="About.html">About</a>
+  <a href="myspace.html">Writings</a>
+    <div class="mobile-submenu">
+      <a href="space-1.html">Everyday Science</a>
+      <a href="space-2.html">Words Worth Keeping</a>
+      <a href="space-3.html">Random</a>
+    </div>
+  <a href="now.html">N(e)ow!</a></li>
+</nav>
+
+
+<!-- Main content -->
+<main class="main-content container" id="Home">
+  <section class="intro">
+    <h1>Hello! Welcome to my space!</h1>
+    <p>This site is a (not too) personal website of me. 
+      It's a mixed of my curiosity, vulnerability, and hopefully creativity.</p>
+    <a class="btn-cta" href="About.html">Find out more about me!</a>
+  </section>
+
+  <section id="articles" class="card">
+      <h2>Read My Writings!</h2>
+      <div class="article-list">
+        <article class="article-card">
+          <img src="img/home.jpg" alt="">
+          <div class="meta">
+            <h3>What do we call 'home'?</h3>
+            <p>Sometimes, we use the words house and home synonymously, but...<a href="article1.html">Read more →</a></p>
+          </div>
+        </article>
+
+    
+        <article class="article-card">
+          <img src="img/Wallpaper.png" alt="">
+          <div class="meta">
+            <h3>About This Picture</h3>
+            <p>This very photo is also my phone's lockscreen...<a href="article2.html">Read more →</a></p>
+          </div>
+        </article>
+        <article class="article-card">
+          <img src="img/gift.jpg" alt="">
+          <div class="meta">
+            <h3>The Twist of First Impression</h3>
+            <p>As someone who has a little struggle with...<a href="article3.html">Read more →</a></p>
+          </div>
+        </article>
+
+    
+        <article class="article-card">
+          <img src="img/Pisa01.jpg" alt="">
+          <div class="meta">
+            <h3>Unexpected Beauty of Imperfection</h3>
+            <p>Humans always have the tendency to want everything to be
+               perfect or ideal. It's...<a href="article4.html">Read more →</a></p>
+          </div>
+        </article>
+      </div>
+      <h2><a href="myspace.html">Read more</a></h2>
+    </section>
+
+  <section class="closing">
+    <p>
+      From a little girl who's living her life to the fullest 
+    </p>
+  </section>
+
+
+  <footer class="site-footer">
+      © <span id="year">Nurhaliza, Indonesia</span>
+  </footer>
+
+</main>
+
+</body>
+</html>
