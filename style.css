@@ -16,8 +16,8 @@
   --shadow-1: 0 6px 14px rgba(34,34,34,0.12);
   --transition-speed: 220ms;
   --max-width: 800px;
-  --font1: 'Lora', Georgia, system-ui, -apple-system;
-  --font2: 'Libre Baskerville',  sans-serif, ystem-ui, Georgia;
+  --font1: 'Lora', Georgia, system-ui;
+  --font2: 'Libre Baskerville', Garamond, serif, system-ui;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
@@ -470,11 +470,12 @@ body{
 
 .article-figure {
   margin: 30px 0 38px;
+  text-align: center;
 }
 
 .article-figure img {
-  width: 100%;
-  max-height: 420px;
+  max-width: 420px;
+  max-height: 360px;
   object-fit: cover;
   border-radius: var(--radius);
   box-shadow: var(--shadow-1);
@@ -1104,3 +1105,4 @@ a:focus, button:focus, input:focus, textarea:focus { outline:3px solid rgba(182,
     transform: rotate(0deg);
   }
 }
+
