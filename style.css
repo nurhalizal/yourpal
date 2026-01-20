@@ -1022,12 +1022,12 @@ hr {
 }
 
 @media (max-width: 768px) {
-  .dump-page {
+  /* .dump-page {
     padding: 40px 16px 60px;
-  }
+  } */
 
   .dump-flow {
-    gap: 48px;
+    gap: 36px;
   }
 
   .now-page {
@@ -1057,5 +1057,6 @@ hr {
     width: 100%;
   }
 }
+
 
 
