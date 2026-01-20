@@ -963,6 +963,7 @@ a:focus, button:focus, input:focus, textarea:focus { outline:3px solid rgba(182,
   font-family: var(--font2);
   font-style: italic;
   text-align: center;
+  max-width: 260px;
 }
 
 .dump-text {
@@ -1057,6 +1058,7 @@ hr {
     width: 100%;
   }
 }
+
 
 
 
