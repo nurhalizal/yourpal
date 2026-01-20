@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;1,400;0,700;1,700&display=swap" rel="stylesheet">
+  <title>Zyla's Space - Now </title>
+  <link rel="icon" type="image/png" href="img/N (2).png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<input type="checkbox" id="menu-toggle">
+
+<section class="hero">
+  <div class="hero-inner">
+    <h1>Zyla's Space</h1>
+    <p class="lead">Me, myself, and the things I'm fond of</p>
+  </div>
+</section>
+
+<header class="navbar">
+  <div class="nav-inner">
+    <!-- Logo on the header (top left corner) -->
+    <a href="#" class="site-logo">
+      <img src="img/N (2).png" alt="Zyla's N">
+      <span>Zyla's Space</span>
+    </a>
+
+    <!-- Nav-bars -->
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="dropdown">
+        <a href="myspace.html">Writings ▾</a>
+        <ul class="dropdown-menu">
+            <li><a href="myspace.html#space1">Everyday Science</a></li>
+            <li><a href="myspace.html#space2">Words Worth Keeping</a></li>
+            <li><a href="myspace.html#space3">Random</a></li>
+        </ul>
+        </li>
+      <li><a href="#Update" class="active">N(e)ow!</a></li>
+    </ul>
+    <label for="menu-toggle" class="hamburger">
+      <span class="line"></span>
+    </label>
+  </div>
+</header>
+
+<!-- Sidebar -->
+<div class="mobile-overlay"></div>
+<nav class="mobile-sidebar">
+  <label for="menu-toggle" class="mobile-close">✕</label>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="myspace.html">Writings</a>
+    <div class="mobile-submenu">
+      <a href="myspace.html#space1">Everyday Science</a>
+      <a href="myspace.html#space2">Words Worth Keeping</a>
+      <a href="myspace.html#space3">Random</a>
+    </div>
+  <a href="#Update">N(e)ow!</a></li>
+</nav>
+
+<main class="space-page">
+
+<section class="card" id="Update">
+    <div class="dump-intro" style="margin-bottom: 24px;">
+    <h1>What's new/now?</h1>
+    <p>A snapshot of what's been going on lately</p>
+    <hr>
+    <time datetime="2026-01">Last updated: January 2026</time>
+    </div>
+</section>
+
+<section class="now-page">
+  <h2> What's in my mind? </h2>
+  <p> </p>
+  <h3>  </h3>
+  <div class="article-list">
+    <div class="dump-text">
+      I made a fun recap of my days through 2025, and here's the result:
+    </div>
+    <article class="article-card">
+    <img src="2025/main-jan.jpg" alt="">
+    <div class="meta">
+      <h3><a href="2025.html">A Glimpse of 2025</a></h3>
+      <p class="excerpt">A page dedicated to store fragments of memories which have shaped the year <br> <a href="2025.html">Read more →</a></p>
+    </div>
+    </article>
+  </div>
+</section>
+
+</main>
+
+
+</body>
