@@ -517,11 +517,6 @@ body{
   }
 }
 
-@media (max-width: 380px) {
-  .article-figure img {
-    max-height: 260px;
-  }
-}
 .card {
   background: var(--ivory);
   border-radius: var(--radius);
@@ -1064,6 +1059,7 @@ hr {
     width: 100%;
   }
 }
+
 
 
 
