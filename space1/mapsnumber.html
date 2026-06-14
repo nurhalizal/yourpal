@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Zyla's Space - The Maps' Confusing Numbers</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" type="image/png" href="../img/N (2).png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?
+  family=Lora:wght@400;600;700&
+  family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&
+  display=swap" rel="stylesheet"> 
+</head>
+<body>
+<input type="checkbox" id="menu-toggle">
+
+<section class="hero">
+  <div class="hero-inner">
+    <h1>Zyla's Space</h1>
+    <p class="lead">Me, myself, and the things I'm fond of</p>
+  </div>
+</section>
+
+<header class="navbar">
+  <div class="nav-inner">
+    <!-- Logo on the header (top left corner) -->
+    <a href="#" class="site-logo">
+      <img src="../img/N (2).png" alt="Zyla's N">
+      <span>Zyla's Space</span>
+    </a>
+
+    <!-- Nav-bars -->
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li class="dropdown">
+        <a href="../myspace.html" class="active">Writings ▾</a>
+        <ul class="dropdown-menu">
+            <li><a href="../myspace.html#space1">Everyday Science</a></li>
+            <li><a href="../myspace.html#space2">Words Worth Keeping</a></li>
+            <li><a href="../myspace.html#space3">Random</a></li>
+        </ul>
+        </li>
+      <li><a href="now.html">N(e)ow!</a></li>
+    </ul>
+    <label for="menu-toggle" class="hamburger">
+      <span class="line"></span>
+    </label>
+  </div>
+</header>
+
+<!-- Sidebar -->
+<div class="mobile-overlay"></div>
+<nav class="mobile-sidebar">
+  <label for="menu-toggle" class="mobile-close">✕</label>
+  <a href="../index.html">Home</a>
+  <a href="../about.html">About</a>
+  <a href="../myspace.html">Writings</a>
+    <div class="mobile-submenu">
+      <a href="../myspace.html#space1">Everyday Science</a>
+      <a href="../myspace.html#space2">Words Worth Keeping</a>
+      <a href="../myspace.html#space3">Random</a>
+    </div>
+  <a href="now.html">N(e)ow!</a></li>
+</nav>
+
+<main class="article-page">
+
+<article class="article">
+  <header class="article-header">
+  <h1>The Maps' Confusing Numbers</h1>
+  <div class="article-meta">
+    <time datetime="2025-08-24">August 24, 2025</time>
+    <span>Science of Everyday Awe</span>
+  </div>
+  </header>
+  <figure class="article-figure">
+    <img src="../img/latlong.jpg" alt="">
+    <figcaption>This is what I mean</figcaption>
+  </figure>
+  <section class="article-full">
+    <p>If you pinpoint a location anywhere on Google Maps, you’ll almost instantly get the exact location information appearing on the search bar. Although, it’s probably not the form of information you expected. Instead of directly offering you the name of the location (e.g. Basingstoke and Deane District, UK), Maps initially give you a series of number (e.g. 51.36…, -1.07…). But don’t worry, Maps will give you the name of the location as soon as possible on the bottom slider and sometime after on the search bar as well. However, doesn’t it left you wondering, what does the number even mean? Well, since Maps isn’t the only place you may see the numbers, you might have been familiar with the typical series of number. However, familiarity doesn’t guarantee understanding, hence I guess some humble explanation about those numbers would be helpful.
+    </p>
+    <p>The numbers consist of two parts separated by a comma (,) and each part is as important as the other in presenting a location. If your familiar with Cartesian coordinates (coordinates system using x, y, z), understanding this wouldn’t be much of a work. The difference lies on the types of coordinates and units used. In this case, we picture the earth as a three-dimensional spherical coordinate with a fixed radius. In 3D coordinates, we need at least three different information to tell a position of a point—for spherical coordinates, we need the radius and two angles. Because the radius of the earth is fixed, two other information of a ‘point’ is enough to know the exact location, hence the two numbers shown in Maps.
+    </p>
+    <p>These numbers represent imaginary lines on the earth’s surface which are measured in degree. They play similar role as $\theta$ and $\phi$ used in textbooks to describe a point in a spherical coordinate. The first one, which is the number written before the comma represent the latitude degree of a location. Latitude lines are parallel to the equator line that separates the earth into two hemispheres; North and South. The latitude degree measurement runs from 0° at the equator to 90° at the North Pole and reaches 90° to the south at the South Pole from the same origin (equator). As there are two end points of the same measurement, the symbol used in a notation is significant. Positive sign indicates a point location in the northern hemisphere, and negative for the south. So, if we look at the example I mentioned, we can tell that it is located in the northern part of the earth.
+    </p>
+    <p>Next up, the second number is the longitude degree. Unlike the latitude lines that are parallel with the equator, longitude lined are parallel with the Prime Meridian—the 0° longitude line. The measurement ranges from 0° to 180° to the east and west, with east written in positive sign and west using negative sign. By the way, the prime meridian extends from the North Pole to the South Pole that passes through Royal Observatory Greenwich. By means, any place located to the next of Greenwich has positive longitude, whereas anywhere to the west of it has negative longitude. 
+    </p>
+    <p>As for the example I mentioned, it’s apparent that the location is located slightly to the west, yet not that far. Oh, and furthermore, these lines—especially longitude lines are used as a base of time zone divisions, which I’m actually eager to talk about. But for now, I think that’s all I wanted to share and I hope this piece does a good job to explain anyone who’s still confused to see numbers referring to a location. In a nutshell, the numbers basically tell how far a location is from to the South/North and to the East/West—and that’s enough to know where it is located on earth precisely.
+    </p>
+    <p>Ps: The example I took means nothing, by the way. I just opened Google Maps and randomly pinpointed somewhere in the UK. And why UK? Because I just watched UK contents on Youtube, haha.
+    </p>
+  </section>
+</article>
+
+</main>
+<section class="closing">
+    <p>
+      ~ Thank you for stopping by ~
+    </p>
+</section>
+
+<footer class="site-footer">
+    © <span id="year">Nurhaliza, Indonesia</span>
+</footer>
+</body>
+</html>
