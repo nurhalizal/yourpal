@@ -1,0 +1,173 @@
+:root{
+
+--primary:#2BB6A8;
+--primary-light:#CBF3F0;
+
+--accent:#F58F00;
+
+--background:#F9FCFC;
+
+--text:#2E2E2E;
+--text-light:#666;
+
+--border:#E3ECEC;
+
+--card:#FFFFFF;
+
+}
+
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+
+}
+
+html{
+scroll-behavior:smooth;
+
+}
+
+body{
+font-family:"Inter",sans-serif;
+background:var(--background);
+color:var(--text);
+line-height:1.8;
+}
+
+.container{
+width:min(1100px,90%);
+margin:auto;
+}
+
+.narrow{
+max-width:760px;
+}
+
+h1,h2{
+font-family:"Libre Baskerville",serif;
+font-weight:700;
+}
+
+h3,h4{
+font-family:"Libre Baskerville",serif;
+color: var(--accent);
+font-weight:450;
+}
+.navbar{
+background:white;
+border-bottom:1px solid var(--border);
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.navbar .container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 0;
+}
+
+.logo{
+font-family:"Libre Baskerville",serif;
+font-size:1.15rem;
+color:var(--primary);
+font-weight:bold;
+}
+
+.hero{
+padding:100px 0;
+text-align:center;
+}
+
+.hero-tag{
+color:var(--accent);
+font-weight:600;
+margin-bottom:1rem;
+letter-spacing:1px;
+}
+
+.hero h1{
+font-size:3rem;
+color:var(--primary);
+margin-bottom:1.2rem;
+}
+
+.hero-subtitle{
+font-size:1.1rem;
+color:var(--text-light);
+max-width:720px;
+margin:auto;
+margin-bottom:2.5rem;
+}
+
+.button{
+display:inline-block;
+padding:14px 32px;
+background:var(--primary);
+color:white;
+text-decoration:none;
+border-radius:999px;
+transition:.25s;
+font-weight:600;
+}
+
+.button:hover{
+transform:translateY(-3px);
+background:#23998d;
+}
+
+.version{
+margin-top:18px;
+color:var(--text-light);
+font-size:.95rem;
+}
+
+.intro{
+padding:80px 0;
+}
+
+.intro h2{
+text-align:center;
+margin-bottom:2rem;
+color:var(--primary);
+}
+
+.intro p{
+margin-bottom:1.3rem;
+text-align:justify;
+}
+
+.download{
+padding:30px 0 100px;
+}
+
+.download-card{
+background:var(--card);
+border:1px solid var(--border);
+border-radius:20px;
+padding:50px;
+text-align:center;
+box-shadow:0 12px 30px rgba(0,0,0,.05);
+}
+
+.download-card h2{
+color:var(--primary);
+margin-bottom:1rem;
+}
+
+.download-card p{
+margin-bottom:2rem;
+}
+
+footer{
+padding:50px 0;
+text-align:center;
+color:var(--text-light);
+font-size:.95rem;
+border-top:1px solid var(--border);
+margin-top:80px;
+
+}
