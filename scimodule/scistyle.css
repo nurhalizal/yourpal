@@ -14,6 +14,8 @@
 
 --card:#FFFFFF;
 
+--transition-speed: 220ms;
+
 }
 
 *{
@@ -69,6 +71,48 @@ justify-content:space-between;
 align-items:center;
 padding:18px 0;
 }
+
+.nav-links {
+  display:flex;
+  align-items:center;
+  gap: 8px;
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+
+.nav-links a {
+  position:relative;
+  display:inline-block;
+  padding:10px 12px;
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+  font-size:15px;
+  transition: color var(--transition-speed);
+}
+
+
+.nav-links a::after {
+  content:"";
+  position:absolute;
+  left:12%;
+  right:12%;
+  bottom:6px;
+  height:2px;
+  background: linear-gradient(90deg, var(--accent), var(--primary));
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform var(--transition-speed) cubic-bezier(.2,.9,.3,1);
+  border-radius:2px;
+  opacity:0.95;
+}
+.nav-links a:hover::after,
+.nav-links a.active::after{
+  transform: scaleX(1);
+}
+
 
 .logo{
 font-family:"Libre Baskerville",serif;
