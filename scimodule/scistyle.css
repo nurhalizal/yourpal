@@ -2,21 +2,24 @@
 
 --primary:#2BB6A8;
 --primary-light:#CBF3F0;
-
+--secondary:#B6C456;
 --accent:#F58F00;
+--accent-light: #FFBF69;
 
---background:#F9FCFC;
-
---text:#2E2E2E;
---text-light:#666;
-
---border:#E3ECEC;
-
+--bg:#F9FCFC;
 --card:#FFFFFF;
 
+--text:#2D3436;
+--text-light:#666;
+
+--radius:18px;
+--shadow:
+    0 10px 30px rgba(0,0,0,.08);
+--border:#E3ECEC;
 --transition-speed: 220ms;
 
 }
+
 
 *{
 
@@ -122,12 +125,36 @@ font-weight:bold;
 }
 
 .hero{
-padding:100px 0;
-text-align:center;
+
+    min-height:70vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    background:
+
+    linear-gradient(
+        180deg,
+        var(--primary),
+        var(--card)
+    );
+
+    color:white;
+
 }
 
+/* .hero{
+padding:100px 0;
+text-align:center;
+} */
+
 .hero-tag{
-color:var(--accent);
+color:var(--card);
 font-weight:600;
 margin-bottom:1rem;
 letter-spacing:1px;
@@ -135,13 +162,13 @@ letter-spacing:1px;
 
 .hero h1{
 font-size:3rem;
-color:var(--primary);
+color:var(--card);
 margin-bottom:1.2rem;
 }
 
 .hero-subtitle{
 font-size:1.1rem;
-color:var(--text-light);
+color:var(--text);
 max-width:720px;
 margin:auto;
 margin-bottom:2.5rem;
@@ -150,7 +177,7 @@ margin-bottom:2.5rem;
 .button{
 display:inline-block;
 padding:14px 32px;
-background:var(--primary);
+background:var(--accent);
 color:white;
 text-decoration:none;
 border-radius:999px;
@@ -182,6 +209,31 @@ color:var(--primary);
 .intro p{
 margin-bottom:1.3rem;
 text-align:justify;
+}
+
+.card{
+  background: white;
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  transition: var(--transition-speed);
+}
+
+.card:hover{
+  transform:translateY(-6px);
+}
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,
+    minmax(280px,1fr));
+
+    gap:2rem;
+
 }
 
 .download{
